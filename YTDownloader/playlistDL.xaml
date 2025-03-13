@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    
+    xmlns:local="clr-namespace:YTDownloader"
+    
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="YTDownloader.playlistDL">
+    <VerticalStackLayout
+        Padding="20,0"
+        Spacing="10">
+        <Label
+            x:Name="lbl"
+            Text="YTDownloader"
+            FontSize="Large"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Label
+            x:Name="lbl2"
+            Text="Playlist Downloader"
+            FontSize="Medium"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Border
+            Stroke="#00CC00"
+            StrokeThickness="2"
+            BackgroundColor="White"
+            Padding="5">
+            <Border.StrokeShape>
+                <RoundRectangle
+                    CornerRadius="10.0" />
+            </Border.StrokeShape>
+            <Entry
+                x:Name="userInput"
+                Placeholder="Input here..."
+                PlaceholderColor="black"
+                TextColor="black" />
+        </Border>
+        <Button
+            Text="Let's go!"
+            Clicked="getEntry"
+            BackgroundColor="#00CC00" />
+        <Label
+            x:Name="outputTxt" />
+    </VerticalStackLayout>
+</ContentPage>

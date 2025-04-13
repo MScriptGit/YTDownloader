@@ -1,3 +1,4 @@
+#Made by MScript 2025
 import sys
 import kivy
 from kivy.app import App
